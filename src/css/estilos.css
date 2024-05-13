@@ -1,0 +1,107 @@
+body{
+    background-image: url(../imagens/bg-repeat.jpg);
+    background-repeat: repeat-x;
+    background-size: contain;
+}
+
+main{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-duvidas{
+    display: flex;
+    align-items: center;
+}
+
+.container-duvidas .explicacao{
+    max-width: 300px;
+}
+
+.container-duvidas .explicacao .titulo{
+    font-size: 2rem;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 11px;
+}
+
+.container-duvidas .explicacao .texto{
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #fff;
+}
+
+.container-duvidas .formulario{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    margin-left: 60px;
+}
+
+.campo::placeholder{
+    color: #A8A8A8;
+    font-size: 1.5rem;
+    font-weight: 700;
+    position: absolute;
+    top: 8px;
+    left: 10px;
+}
+
+.formulario .campo{
+    width: 300px;
+    height: 35px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    border-radius: 5px;
+    border: 1px solid #000;
+    margin-top: 15px;
+    padding-left: 10px;
+}
+
+.formulario .campo:first-child{
+    margin-top: 0;
+}
+
+.formulario .campo.mensagem{
+    min-height: 100px;
+    resize: none;
+    padding-top: 8px;
+}
+
+.formulario .instrucao{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-top: 7px;
+}
+
+.formulario .botao{
+    width: 300px;
+    height: 42px;
+    background-color: #3CCC87;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-top: 20px;
+}
+.formulario .aviso{
+    display: none;
+    color: red;
+}
+
+.formulario .aviso.aviso-ativo{
+    display: block;
+}
+
+.formulario .campo.nao-preenchido{
+    border-color: #F52E2E;
+}
+
+.formulario .campo.preenchido{
+    border-color: #00C22B;
+}
